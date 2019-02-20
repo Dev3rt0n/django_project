@@ -15,14 +15,14 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand mr-auto" href="#">Django</a>
+    <a class="navbar-brand mr-auto" href="{% url 'home' %}">Django</a>
 
     <ul class="navbar-nav">
       <li class="navbar-item">
         <a class="nav-link" href="#">Sobre o Projeto</a>
       </li>
       <li class="navbar-item">
-        <a class="nav-link" href="#">História Django</a>
+        <a class="nav-link" href="#">História do Django</a>
       </li>
       <li class="navbar-item">
         <a class="nav-link" href="#">Aplicação</a>
@@ -32,5 +32,31 @@
       </li>
     </ul>
   </nav>
+
+  <div class="jumbotron jumbotron-fluid text-center border-top">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python-logo" width="60">
+    <h3>Python & Django</h3>
+    <p class="text-muted">Por Everton Oliveira</p>
+  </div>
+
+  <div class="conteiner ml-3">
+    <h1 class="">Sobre o Projeto</h1>
+    <div class="row">
+      <div class="col-xl-8">
+        <p>Este projeto é todo desenvolvido com Django, framework de Python, atuando no backend. Outras tecnologias incluem bootstrap e javascript no frontend. 
+        <br> <br>
+        Como uma metalinguistica, o projeto pretende explicar o funcionamento do django utilizando o próprio Django para isto.
+        <br> <br>
+        O projeto é todo desenvolvido por mim, Everton oliveira, estudante de análise de sistemas pela FAETERJ-RIO.
+        </p>
+      </div>
+      <div class="col-xl-3">
+        <img src="https://fontmeme.com/images/Django_logo.png" alt="python" width="200">
+      </div>
+    </div>
+    
+  </div>
+
+
 </body>
 </html>
