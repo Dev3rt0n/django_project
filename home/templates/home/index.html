@@ -14,15 +14,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand mr-auto" href="{% url 'home' %}">Django</a>
 
     <ul class="navbar-nav">
       <li class="navbar-item">
-        <a class="nav-link" href="#">Sobre o Projeto</a>
+        <a class="nav-link" href="#sobre">Sobre o Projeto</a>
       </li>
       <li class="navbar-item">
-        <a class="nav-link" href="#">História do Django</a>
+        <a class="nav-link" href="#historia">História do Django</a>
       </li>
       <li class="navbar-item">
         <a class="nav-link" href="#">Aplicação</a>
@@ -39,22 +39,36 @@
     <p class="text-muted">Por Everton Oliveira</p>
   </div>
 
-  <div class="conteiner ml-3">
-    <h1 class="">Sobre o Projeto</h1>
+  <div class="conteiner ml-3 mb-5">
+    <h1 id="sobre">Sobre o Projeto</h1>
     <div class="row">
       <div class="col-xl-8">
-        <p>Este projeto é todo desenvolvido com Django, framework de Python, atuando no backend. Outras tecnologias incluem bootstrap e javascript no frontend. 
-        <br> <br>
-        Como uma metalinguistica, o projeto pretende explicar o funcionamento do django utilizando o próprio Django para isto.
-        <br> <br>
-        O projeto é todo desenvolvido por mim, Everton oliveira, estudante de análise de sistemas pela FAETERJ-RIO.
-        </p>
+        <br>
+        <p>Este projeto é todo desenvolvido com Django (rodando na versão 2.1.7), framework de Python (rodando na versão 3.7.2), atuando no backend. Outras tecnologias incluem bootstrap e javascript no frontend.</p>
+        <p>Como uma metalinguistica, o projeto pretende explicar o funcionamento do django utilizando o próprio Django para isto.</p>
+        <p>A mente por trás deste humilde projeto sou eu, Everton Oliveira, estudante de análise de sistemas pela FAETERJ-RIO.</p>
+        <p>Busco, como objetivo, apenas por em prática meus estudos sobre este maravilhoso framework</p>
       </div>
       <div class="col-xl-3">
-        <img src="https://fontmeme.com/images/Django_logo.png" alt="python" width="200">
+        <img class="border" src="https://fontmeme.com/images/Django_logo.png" alt="python" width="200">
       </div>
     </div>
-    
+  </div>
+
+  <div class="conteiner ml-3">
+    <h1 id="historia">A história do Django</h1>
+    <div class="row">
+      <div class="col-xl-8">
+        <br>
+        <p>Na imagem ao lado é possivel ver a primeira aplicação web feita em Django. </p>
+        <p>Brincadeira!! O Django não é nem um pouco velho, sua primeira versão foi lançada em Julho de 2005. Seu nome tem como inspiração o grande guitarrista de jazz Django Reinhardt, que influênciou muitos outros músicos como Tony Iommi, guitarrista da banda Black Sabbath.</p>
+        <p>Tudo começou quando dois programadores de um jornal local da cidade de Kansas, nos Estados Unidos, resolveram criar um framework de python que lhes facilitassem o trabalho de administrar uma pagina web tão dinâmica como de um jornal. A intenção também era criar uma ferramenta de fácil manipulação para que jornalistas não programadores pudessem utiliza-la.</p>
+        <p>Estes programadores são respectivamente Adrian Holovaty e Simon Willison que ganharam inumeros premios por esta criação.</p>
+      </div>
+      <div class="col-xl-3 mt-5 text-center">
+        <img class="border" src="http://1.bp.blogspot.com/-5rSv2LZOV_k/Tp2kszCGoSI/AAAAAAAAAKw/5pEkXvRbn8Q/s200/imagesvelh.jpg" alt="python" width="200">
+      </div>
+    </div>
   </div>
 
 
