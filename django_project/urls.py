@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Homepage, name='home'),
     path('calculadora/', include('calc.urls')),
+    path('formulario/', include('formulario.urls')),
 ]
